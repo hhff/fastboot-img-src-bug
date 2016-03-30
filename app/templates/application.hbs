@@ -1,9 +1,6 @@
 {{#each model as |album|}}
-  <img src={{album.images.firstObject.url}} class="md-avatar">
-  <div class="md-list-item-text">
-    <h3>Squarepusher</h3>
-    <p>{{album.name}}</p>
-  </div>
+  <img src={{album.images.firstObject.url}}>
+  <h3>Squarepusher</h3>
+  <p>{{album.name}}</p>
   <hr />
 {{/each}}
-{{infinity-loader infinityModel=model destroyOnInfinity=true}}
